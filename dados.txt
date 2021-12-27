@@ -1,1 +1,1 @@
-aaa
+insert into tbdados values (2468, 123456, 0, 400.00, "Ailton");
