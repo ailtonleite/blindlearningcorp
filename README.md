@@ -13,4 +13,65 @@ Desenvolver uma API utilizando o java Spring Boot para consulta de dados de clie
 - [ ] Adicionar o front-end (bônus)
 
 # Criando a tabela de dados
+### Criando o banco de dados
+
+Primeiro passo é criar a nossa database no MySQL Command Line Client, para criar uma database basta digitar o comando:
+```
+create database apidados;
+```
+
+Podemos verificar se a database foi criada com sucesso, utilizando o comando:
+```
+show databases;
+```
+
+Por fim, precisamos acessa-la utilizando o comando:
+```
+use apidados;
+```
+
+### Criando a tabela
+
+Agora precisamos criar nossa tabela com os seguintes atributos:
+* numero (como uma chave primaria e não nulo)
+* agencia (numero inteiro e não nulo)
+* tipo (numero inteiro e não nulo) (tipo 0: conta corrente, tipo 1: poupança, tipo 2: investimento)
+* saldo (numero decimal e não nulo)
+* titular (texto não nulo)
+
+Para isso vamos usar o seguinte bloco de comandos:
+```
+create table tbdados (
+numero integer not null primary key,
+agencia integer not null,
+tipo integer not null,
+saldo double not null,
+titular varchar(100) not null
+);
+```
+
+Podemos verificar se a tabela foi criada com sucesso, utilizando o comando:
+```
+describe tbdados;
+```
+
+### Adicionando os dados
+
+**OBS: Todos os dados inseridos serão fictício**
+
+Podemos adicionar inumeros dados a nossa tabela, e para adiciona=los devemos seguir o seguinte comando:
+```
+insert into tbdados values (numero, agencia, tipo, saldo, "titular");
+```
+
+Por exemplo:
+```
+insert into tbdados values (2468, 123456, 0, 400.00, "Ailton");
+```
+
+Para mostrar estes valores:
+```
+select numero, agencia, tipo, saldo, titular from tbdados;
+```
+
 🚧 Em desenvolvimento . . .
