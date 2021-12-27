@@ -1,1 +1,2 @@
 insert into tbdados values (2468, 123456, 0, 400.00, "Ailton");
+insert into tbdados values (3297, 123456, 1, 1402.15, "Alex Junio");
