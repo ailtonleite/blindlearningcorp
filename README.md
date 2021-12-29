@@ -59,7 +59,7 @@ describe tbdados;
 
 **OBS: Todos os dados inseridos serão fictício**
 
-Podemos adicionar inumeros dados a nossa tabela, e para adiciona=los devemos seguir o seguinte comando:
+Podemos adicionar inúmeros dados a nossa tabela, e para adiciona=los devemos seguir o seguinte comando:
 ```
 insert into tbdados values (numero, agencia, tipo, saldo, "titular");
 ```
@@ -73,5 +73,22 @@ Para mostrar estes valores:
 ```
 select numero, agencia, tipo, saldo, titular from tbdados;
 ```
+
+# Criando o projeto Spirng
+### Primeiros passos
+
+Para criarmos nosso projeto com todas as configurações e dependências necessários, usaremos a ferramenta Spring Initializr acessando o link: https://start.spring.io/
+
+Primeiro passo é fazer algumas configurações. Na aba de seleção **Project** vamos usar **Maven project** e em **Language** vamos usar **Java**, em **group** vamos utilizar br.com.blindlearningcorp e em **Artifact** vamos colocar banking. Além das configurações vamos precisar das seguintes dependências (vá até o botão **add depenences** ou utilize o atalho CTRL + B):
+* Spring Web
+* Spring Data JPA
+* MySQL Driver
+* Spring Boot DevTools
+* Thymeleaf
+
+Ao final clique no botão **Generate** (ou use o atalho CTRL + ENTER).
+
+### Fazendo alguns ajustes
+Utilizando a ferramenta eclipse
 
 🚧 Em desenvolvimento . . .
