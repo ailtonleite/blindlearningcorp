@@ -89,6 +89,25 @@ Primeiro passo é fazer algumas configurações. Na aba de seleção **Project**
 Ao final clique no botão **Generate** (ou use o atalho CTRL + ENTER).
 
 ### Fazendo alguns ajustes
-Utilizando a ferramenta eclipse
+Utilizando a ferramenta eclipse já com o nosso projeto gerado e importado dentro do eclipse, é necessário fazer alguns ajustes. No caminho banking/scr/main/resources vamos editar o arquivo application.propeties com as seguintes configurações:
+
+```
+#Configurando usuario do banco
+spring.datasource.username=root
+
+#Configurando a senha
+spring.datasource.password=COLOQUE AQUI A SUA SENHA DO MYSQL
+
+#Configurando base de dados
+spring.datasource.url=jdbc:mysql://localhost:3306/apidados?useTimezone=true&serverTimezone=UTC
+
+#Configurando dialeto
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+``` 
+
+Após isso vamos criar 3 packages dentro de banking/scr/main/java:
+* br.com.blindlearningcorp.banking.controller (Onde serão armazenados todos os controles da API)
+* br.com.blindlearningcorp.banking.model (Onde ficarão todas as classes para cada tabela)
+* br.com.blindlearningcorp.banking.dao (Classes para conectar com o banco de dados)
 
 🚧 Em desenvolvimento . . .
