@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TesteController {
 	
-	//metodo GET que retorna na tela uma string
-	//http://localhost:8080/teste
+	// metodo GET que retorna na tela uma string
+	// http://localhost:8080/teste
 	@GetMapping("/teste")
 	public String helloWorld(){
 		return "Olá mundo!";
