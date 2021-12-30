@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,5 +29,15 @@ public class DadosController {
 	@RequestMapping(value = "/contas/{numero}", method = RequestMethod.GET)
 	public Dados buscarDado(@PathVariable int numero) {
 		return dados.findById(numero).orElse(null);
+	}
+	
+	@RequestMapping(value = "/delete/{numero}", method = RequestMethod.DELETE)
+	public void deletarDado(@PathVariable int numero) {
+		dados.deleteById(numero);
+	}
+	
+	@RequestMapping(value = "/add/{numero}", method = RequestMethod.POST)
+	public void adicionarDado(@RequestBody Dados newConta) {
+		dados.save(newConta);
 	}
 }
