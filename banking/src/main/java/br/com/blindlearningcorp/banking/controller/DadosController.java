@@ -26,16 +26,19 @@ public class DadosController {
 		return (List<Dados>)dados.findAll();
 	}
 	
+	// Metodo que exibe um dado especifico, buscando pelo atributo numero
 	@RequestMapping(value = "/contas/{numero}", method = RequestMethod.GET)
 	public Dados buscarDado(@PathVariable int numero) {
 		return dados.findById(numero).orElse(null);
 	}
 	
+	// Deleta um dado especifico, buscando pelo atributo numero
 	@RequestMapping(value = "/delete/{numero}", method = RequestMethod.DELETE)
 	public void deletarDado(@PathVariable int numero) {
 		dados.deleteById(numero);
 	}
 	
+	// Adiciona um novo dado pelo metodo HTTP POST
 	@RequestMapping(value = "/add/{numero}", method = RequestMethod.POST)
 	public void adicionarDado(@RequestBody Dados newConta) {
 		dados.save(newConta);
