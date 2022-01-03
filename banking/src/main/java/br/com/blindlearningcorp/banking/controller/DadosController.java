@@ -39,7 +39,7 @@ public class DadosController {
 	}
 	
 	// Adiciona um novo dado pelo metodo HTTP POST
-	@RequestMapping(value = "/add/{numero}", method = RequestMethod.POST)
+	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public void adicionarDado(@RequestBody Dados newConta) {
 		dados.save(newConta);
 	}
