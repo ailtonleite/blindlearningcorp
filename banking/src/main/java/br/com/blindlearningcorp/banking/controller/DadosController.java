@@ -34,8 +34,7 @@ public class DadosController {
 		ModelAndView mv = new ModelAndView("html/search");
 		return mv.addObject("conta", dados.findById(numero));
 	}
-<<<<<<< Updated upstream
-=======
+
 	//public Dados buscarDado(@PathVariable int numero) {
 	//	return dados.findById(numero).orElse(null);
 	//}
@@ -51,5 +50,4 @@ public class DadosController {
 	public void adicionarDado(Dados newConta) {
 		dados.save(newConta);
 	}
->>>>>>> Stashed changes
 }
