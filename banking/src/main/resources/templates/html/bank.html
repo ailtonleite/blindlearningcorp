@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+    <head> 
+        <title>BCL Bank</title> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <h1>Blind Corp Learning</h1>
+        <table>
+            <tr>
+                <td>numero</td>
+                <td>agencia</td>
+            </tr>
+            <tr th:each="bd : ${conta}">
+                <td th:text="${bd.numero}">numero</td>
+                <td th:text="${bd.agencia}">agencia</td>
+                <td th:text="${bd.tipo}">tipo</td>
+                <td th:text="${bd.saldo}">saldo</td>
+                <td th:text="${bd.titular}">titular</td>
+            </tr>
+        </table>
+
+    </body>
+</html>

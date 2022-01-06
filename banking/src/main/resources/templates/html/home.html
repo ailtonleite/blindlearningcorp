@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head> 
+        <title>BCL Home</title> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <h1>Blind Corp Learning</h1>
+        <h2>Bem vindo!</h2>
+        <p>O que deseja fazer?</p>
+
+        <a href="/contas" class="button">Exibir dados</a>
+        <a href="/contas/0">Buscar ID</a>
+        <br>
+        <br>
+        <form action="#" th:action="@{/add}" th:object="${dados}" method="post">
+            <table border="1">
+                <tr> 
+                    <td><label>Numero:</label></td>
+                    <td><input type="number" th:field="*{numero}"></td>
+                </tr>
+                <tr>
+                <td><label>Agência:</label></td>
+                    <td><input type="number" th:field="*{agencia}"></td>
+                </tr>
+                <tr>
+                <td><label>Tipo:</label></td>
+                    <td><input type="number" th:field="*{tipo}"></td>
+                </tr>
+                <tr>
+                <td><label>Saldo:</label></td>
+                    <td><input type="number" th:field="*{saldo}"></td>
+                </tr>
+                <tr>
+                <td><label>Titular:</label></td>
+                    <td><input type="text" th:field="*{titular}"></td>
+                   </tr>
+                
+                    <td><input type="submit" value="Enviar"></td>
+            </table>
+            </form>
+        
+
+    </body>
+</html>
