@@ -7,9 +7,9 @@ Desenvolver uma API utilizando o java Spring Boot para consulta de dados de clie
 
 # Objetivos
 - [x] Criar a tabela de dados utilizando o MySQL
-- [ ] Criar o projeto Spring Boot
-- [ ] Adicionar os endpoints principais
-- [ ] Adicionar os endpoints para adicionar e remover usuários (bônus)
+- [x] Criar o projeto Spring Boot
+- [x] Adicionar os endpoints principais
+- [x] Adicionar os endpoints para adicionar e remover usuários (bônus)
 - [ ] Adicionar o front-end (bônus)
 
 # Criando a tabela de dados
