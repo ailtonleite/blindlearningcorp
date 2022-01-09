@@ -111,3 +111,29 @@ Após isso vamos criar 3 packages dentro de banking/scr/main/java:
 * br.com.blindlearningcorp.banking.dao (Classes para conectar com o banco de dados)
 
 🚧 Em desenvolvimento . . .
+
+#Fontes de Pesquisas
+
+https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html
+
+https://spring.io/guides/gs/serving-web-content/
+
+https://spring.io/guides/tutorials/rest/
+
+#Agradecimentos
+
+Ao Itaú-Unibanco pela grande oportunidade  em proporcionar a pessoas com deficiência uma vaga no mercado de trabalho e termos a chance de mostrarmos  todo o nosso potencial e capacidade de sermos produtivos e grandes profissionais na área da tecnologia
+
+A Gama Academy que desde do inicío nos proporcionou um curso  de formação com conteúdo de excelente qualidade
+
+Aos nossos professores Francisco Isidro e Diego Augusto pela didática das aulas e a toda dedicação que tiveram para passar de forma mais acessível todo o aprendizado durante a trilha de formação
+
+A Sra. Regina Giovannini que foi nossa Yellow Belt e sempre com um conselho inspirador e sempre disposta a nos ajudar com muita paciência e dedicação
+
+A todos os integrantes deste grupo de trabalho em Especial ao Ailton Leite que foi nosso capitão e nos guiou para o sucesso deste trabalho
+
+Ailton Leite
+Aline Luna
+Alex Junio
+Cássio Roberto
+Clau Pinheiro
