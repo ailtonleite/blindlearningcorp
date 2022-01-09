@@ -10,7 +10,7 @@ Desenvolver uma API utilizando o java Spring Boot para consulta de dados de clie
 - [x] Criar o projeto Spring Boot
 - [x] Adicionar os endpoints principais
 - [x] Adicionar os endpoints para adicionar e remover usuários (bônus)
-- [ ] Adicionar o front-end (bônus)
+- [x] Adicionar o front-end (bônus)
 
 # Criando a tabela de dados
 ### Criando o banco de dados
